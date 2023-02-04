@@ -1,0 +1,100 @@
+:root {
+    --Very_dark_blue1: hsl(217, 54%, 11%);
+    --Very_dark_blue2: hsl(216, 50%, 16%);
+    --Very_dark_blue3: hsl(215, 32%, 27%);
+    --White:hsl(0, 0%, 100%);
+    --Soft_blue:hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    
+
+}
+
+
+
+
+/* - Font size (paragraph): 18px
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
+
+body {
+    background-color:var(--Very_dark_blue2);
+    font-family: "Outfit";
+}
+.font-white {
+    color: white;
+}
+.font-grey {
+    color: var(--Soft_blue);
+}
+
+
+.child {
+    display: inline-block;
+
+}
+
+
+
+.main {
+    position: fixed;
+    top: 15%;
+    left: 40%;
+    background-color: var(--Very_dark_blue3);
+    width: 300px;
+    height: 550px;
+    border-radius: 30px;
+    padding: 25px;
+    box-shadow: 0 0 70px var(--Very_dark_blue1);
+    margin: 0 5px;
+
+}
+
+img.mainImage {
+    border-radius: 20px;
+    width: 100%;
+    height: 20%;
+}
+.mainHeader{ 
+    font-weight: 600;
+}
+.mainP {
+    font-size: 18px;
+    font-weight: 300;
+    
+}
+.info {
+    text-align: left;
+    padding-right: 70px;   
+}
+
+.eth {
+    color: var(--Cyan);
+}
+.mainFooter {
+    border-top: 1px solid var(--White);
+    padding-top: 10px;
+    
+}
+
+.footerText {
+    vertical-align: middle;
+    text-align: right;
+    font-size: 15px;
+}
+img.creatorImg {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--White);
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 375px) {
+    .main {
+        left: 1vh;
+        top: 10%;
+        position: top;
+
+    }
+  }
